@@ -11,6 +11,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 150px;
     .listn1 {
         display: flex;
         align-items: center;
@@ -27,7 +28,7 @@ header {
         font-size: 16px;
         line-height: 96.4%;
         text-align: center;
-        color: #1b1919;
+        color: #FFFFFF;
          :hover {
             background: linear-gradient(92.09deg, #5E3928 -79.4%, #E4A16F 84.12%);
             -webkit-background-clip: text;
@@ -44,9 +45,15 @@ header {
     .burger {
         display: none;
     }
+    .nav__neopen {
+        display: none;
+    }
 }
 
 @media screen and (max-width:768px) {
+    .container {
+        padding: 0 10px;
+    }
     header {
         background-image: url(../../imges/BGtablet.jpg);
         background-repeat: no-repeat;
@@ -57,13 +64,24 @@ header {
             display: table-column-group;
         }
         &__list {
+            gap: 30px;
             padding-top: 20px;
+        }
+        .item__link {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 96.4%;
         }
     }
 }
 
 @media screen and (max-width:576px) {
-    header {}
+    header {
+        background-image: url(../../imges/BGmobile.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
     .nav {
         .listn1 {}
         &__list {
@@ -73,7 +91,7 @@ header {
             height: 100vh;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #E4A16F 100%);
+            background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
             position: absolute;
             top: 0px;
             left: 0;
@@ -84,13 +102,14 @@ header {
         &__list li {
             margin-bottom: 20px;
         }
-        &__list li a {
+        &__list .item__link {
+            font-family: 'Mont';
             font-style: normal;
-            font-weight: 900;
-            font-size: 24px;
-            line-height: 32px;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 210.9%;
             text-align: center;
-            color: #333D4B;
+            color: #FFFFFF;
         }
         .input:checked~.listn1 .nav__list {
             transform: translateY(0);
@@ -102,11 +121,13 @@ header {
             display: block;
         }
         .nav__neopen {
+            display: block;
             position: absolute;
             top: 20px;
             left: 5px;
             background-color: #fff;
             padding: 5px 10px;
+            font-weight: 900;
         }
         .icons__logo0 {
             display: none;
@@ -121,3 +142,158 @@ header {
         }
     }
 }
+
+.header {
+    &__title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 100px;
+        line-height: 74.9%;
+        color: #FFFFFF;
+        padding-bottom: 50px;
+    }
+    &__leni {
+        display: block;
+        border-radius: 2px;
+        max-width: 623px;
+        width: 100%;
+        height: 0.5px;
+        background-color: #fff;
+    }
+    &__title3 {
+        max-width: 533px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 96.4%;
+        color: #FFFFFF;
+    }
+    &__sena {
+        display: flex;
+        padding-bottom: 40px;
+    }
+    .sena__leni {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 96.4%;
+        color: #FFFFFF;
+        padding-right: 75px;
+    }
+    &__sena__leni1 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 96.4%;
+        color: #FFFFFF;
+    }
+    &__btn {
+        padding: 16px 131px;
+        border: none;
+        background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+        margin-bottom: 233px;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 96.4%;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .header {
+        &__title {
+            font-family: 'Lighthaus';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 114.9%;
+            color: #FFFFFF;
+            padding-bottom: 15px;
+        }
+        &__leni {
+            display: block;
+            border-radius: 2px;
+            max-width: 388px;
+            width: 100%;
+            height: 0.2px;
+            background-color: #fff;
+        }
+        &__title3 {
+            max-width: 327px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 128.4%;
+            color: #FFFFFF;
+        }
+        &__sena {
+            display: flex;
+            padding-bottom: 40px;
+        }
+        .sena__leni {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 96.4%;
+            color: #FFFFFF;
+            padding-right: 75px;
+        }
+        &__sena__leni1 {
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 96.4%;
+            color: #FFFFFF;
+        }
+        &__btn {
+            padding: 16px 131px;
+            border: none;
+            background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+            margin-bottom: 233px;
+            max-width: 155px;
+            width: 100%;
+        }
+    }
+}
+
+.hero {
+    &__title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 74.9%;
+        text-align: center;
+        color: #031412;
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        flex-wrap: wrap;
+        padding-bottom: 160px;
+    }
+    &__list--item {
+        background-image: url(../../imges/image12.jpg);
+        background-repeat: no-repeat;
+        .item__text {
+            padding-left: 47px;
+            padding-right: 41px;
+            padding-top: 435px;
+            padding-bottom: 27px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 96.4%;
+            color: #FFFFFF;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {}

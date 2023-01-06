@@ -1,9 +1,17 @@
+@font-face {
+  font-family: "Mont";
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Mont";
 }
 
 .container {
@@ -25,6 +33,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 150px;
 }
 .nav .listn1 {
   display: flex;
@@ -42,7 +51,7 @@ header {
   font-size: 16px;
   line-height: 96.4%;
   text-align: center;
-  color: #1b1919;
+  color: #FFFFFF;
 }
 .nav .item__link :hover {
   background: linear-gradient(92.09deg, #5E3928 -79.4%, #E4A16F 84.12%);
@@ -59,8 +68,14 @@ header {
 .nav .burger {
   display: none;
 }
+.nav .nav__neopen {
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
   header {
     background-image: url(../../imges/BGtablet.jpg);
     background-repeat: no-repeat;
@@ -72,10 +87,22 @@ header {
     display: table-column-group;
   }
   .nav__list {
+    gap: 30px;
     padding-top: 20px;
+  }
+  .nav .item__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 96.4%;
   }
 }
 @media screen and (max-width: 576px) {
+  header {
+    background-image: url(../../imges/BGmobile.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
   .nav__list {
     position: relative;
     flex-direction: column;
@@ -83,7 +110,7 @@ header {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #E4A16F 100%);
+    background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
     position: absolute;
     top: 0px;
     left: 0;
@@ -94,13 +121,14 @@ header {
   .nav__list li {
     margin-bottom: 20px;
   }
-  .nav__list li a {
+  .nav__list .item__link {
+    font-family: "Mont";
     font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 32px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 210.9%;
     text-align: center;
-    color: #333D4B;
+    color: #FFFFFF;
   }
   .nav .input:checked ~ .listn1 .nav__list {
     transform: translateY(0);
@@ -112,11 +140,13 @@ header {
     display: block;
   }
   .nav .nav__neopen {
+    display: block;
     position: absolute;
     top: 20px;
     left: 5px;
     background-color: #fff;
     padding: 5px 10px;
+    font-weight: 900;
   }
   .nav .icons__logo0 {
     display: none;
@@ -129,4 +159,149 @@ header {
     max-width: 30px;
     padding: 0;
   }
+}
+.header__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 74.9%;
+  color: #FFFFFF;
+  padding-bottom: 50px;
+}
+.header__leni {
+  display: block;
+  border-radius: 2px;
+  max-width: 623px;
+  width: 100%;
+  height: 0.5px;
+  background-color: #fff;
+}
+.header__title3 {
+  max-width: 533px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 96.4%;
+  color: #FFFFFF;
+}
+.header__sena {
+  display: flex;
+  padding-bottom: 40px;
+}
+.header .sena__leni {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 96.4%;
+  color: #FFFFFF;
+  padding-right: 75px;
+}
+.header__sena__leni1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 96.4%;
+  color: #FFFFFF;
+}
+.header__btn {
+  padding: 16px 131px;
+  border: none;
+  background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+  margin-bottom: 233px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 96.4%;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+  .header__title {
+    font-family: "Lighthaus";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 114.9%;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+  }
+  .header__leni {
+    display: block;
+    border-radius: 2px;
+    max-width: 388px;
+    width: 100%;
+    height: 0.2px;
+    background-color: #fff;
+  }
+  .header__title3 {
+    max-width: 327px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 128.4%;
+    color: #FFFFFF;
+  }
+  .header__sena {
+    display: flex;
+    padding-bottom: 40px;
+  }
+  .header .sena__leni {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 96.4%;
+    color: #FFFFFF;
+    padding-right: 75px;
+  }
+  .header__sena__leni1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 96.4%;
+    color: #FFFFFF;
+  }
+  .header__btn {
+    padding: 16px 131px;
+    border: none;
+    background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+    margin-bottom: 233px;
+    max-width: 155px;
+    width: 100%;
+  }
+}
+.hero__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 74.9%;
+  text-align: center;
+  color: #031412;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.hero__list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding-bottom: 160px;
+}
+.hero__list--item {
+  background-image: url(../../imges/image12.jpg);
+  background-repeat: no-repeat;
+}
+.hero__list--item .item__text {
+  padding-left: 47px;
+  padding-right: 41px;
+  padding-top: 435px;
+  padding-bottom: 27px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 96.4%;
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */
