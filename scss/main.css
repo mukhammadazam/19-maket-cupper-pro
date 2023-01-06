@@ -17,17 +17,25 @@ header {
   background-repeat: no-repeat;
 }
 
+.input[type=checkbox] {
+  display: none;
+}
+
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.nav .listn1 {
+  display: flex;
+  align-items: center;
 }
 .nav__list {
   display: flex;
   align-items: center;
   gap: 50px;
 }
-.nav__list .item__link {
+.nav .item__link {
   font-family: "Mont";
   font-style: normal;
   font-weight: 600;
@@ -36,16 +44,89 @@ header {
   text-align: center;
   color: #1b1919;
 }
-.nav__list__list--item :hover {
+.nav .item__link :hover {
   background: linear-gradient(92.09deg, #5E3928 -79.4%, #E4A16F 84.12%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: #E4A16F;
 }
 .nav__logo {
   padding-right: 77px;
 }
 .nav .icons__logo1 {
   padding: 0 20px;
+}
+.nav .burger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    background-image: url(../../imges/BGtablet.jpg);
+    background-repeat: no-repeat;
+  }
+  .nav {
+    padding-bottom: 175px;
+  }
+  .nav .listn1 {
+    display: table-column-group;
+  }
+  .nav__list {
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nav__list {
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #E4A16F 100%);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    padding: 20px;
+    transform: translateY(-120%);
+    transition: 0.6s ease;
+  }
+  .nav__list li {
+    margin-bottom: 20px;
+  }
+  .nav__list li a {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #333D4B;
+  }
+  .nav .input:checked ~ .listn1 .nav__list {
+    transform: translateY(0);
+  }
+  .nav .input:checked ~ .nav .listn1 .nav__neopen {
+    display: none;
+  }
+  .nav .burger {
+    display: block;
+  }
+  .nav .nav__neopen {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    background-color: #fff;
+    padding: 5px 10px;
+  }
+  .nav .icons__logo0 {
+    display: none;
+  }
+  .nav .icon__logo {
+    max-width: 30px;
+    width: 100%;
+  }
+  .nav .icons__logo1 {
+    max-width: 30px;
+    padding: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
