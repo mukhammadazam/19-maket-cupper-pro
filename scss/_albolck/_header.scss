@@ -1,0 +1,37 @@
+header {
+    background-image: url(../../imges/BG.jpg);
+    background-repeat: no-repeat;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        .item__link {
+            font-family: 'Mont';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 96.4%;
+            text-align: center;
+            color: #1b1919;
+        }
+        &__list--item :hover {
+            background: linear-gradient(92.09deg, #5E3928 -79.4%, #E4A16F 84.12%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: #E4A16F;
+        }
+    }
+    &__logo {
+        padding-right: 77px;
+    }
+    .icons__logo1 {
+        padding: 0 20px;
+    }
+}
