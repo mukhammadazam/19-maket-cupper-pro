@@ -83,7 +83,6 @@ header {
         background-size: 100%;
     }
     .nav {
-        .listn1 {}
         &__list {
             position: relative;
             flex-direction: column;
@@ -261,39 +260,12 @@ header {
     }
 }
 
-.hero {
-    &__title {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 50px;
-        line-height: 74.9%;
-        text-align: center;
-        color: #031412;
-        padding-top: 80px;
-        padding-bottom: 40px;
-    }
-    &__list {
-        display: flex;
-        align-items: center;
-        gap: 32px;
-        flex-wrap: wrap;
-        padding-bottom: 160px;
-    }
-    &__list--item {
-        background-image: url(../../imges/image12.jpg);
+@media screen and (max-width:576px) {
+    header {
+        background-image: url(../../imges/BGmobile.jpg);
         background-repeat: no-repeat;
-        .item__text {
-            padding-left: 47px;
-            padding-right: 41px;
-            padding-top: 435px;
-            padding-bottom: 27px;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 30px;
-            line-height: 96.4%;
-            color: #FFFFFF;
-        }
+        background-size: 100%;
+        background-position: center;
+        object-fit: cover;
     }
 }
-
-@media screen and (max-width:768px) {}
