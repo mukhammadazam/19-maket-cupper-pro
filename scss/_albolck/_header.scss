@@ -29,7 +29,7 @@ header {
         line-height: 96.4%;
         text-align: center;
         color: #FFFFFF;
-         :hover {
+        &:hover {
             background: linear-gradient(92.09deg, #5E3928 -79.4%, #E4A16F 84.12%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -90,11 +90,11 @@ header {
             height: 100vh;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
             position: absolute;
             top: 0px;
             left: 0;
             padding: 20px;
+            background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
             transform: translateY(-120%);
             transition: .6s ease;
         }
